@@ -1,0 +1,213 @@
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  height: 100vh;
+}
+
+#about {
+  height: 100vh;
+}
+h1 {
+  font-size: 80px;
+  background: transparent;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.navbar {
+  /* contains logo, and navbar items*/
+
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  position: sticky;
+  z-index: 999;
+  top: 10px; /* sets top edge of nav to be 10px down from nearest positioned ancestor*/
+  /* border: 1px solid white; */
+}
+
+.navbar_container {
+  /* contains logo, and navbar items*/
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 97%;
+  margin: 0 auto;
+  padding: 0 30px;
+  /* border: 1px solid white; */
+}
+
+.navbar_menu {
+  /* navbar list*/
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar_item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  /* border: 1px solid pink; */
+  padding: 20px;
+}
+
+.navbar_logo {
+  /* main logo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid purple; */
+}
+
+.navbar_links {
+  /*About & Projects */
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.835);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid purple; */
+}
+
+.navbar_button {
+  /*Contact button*/
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e3c3f;
+  height: 45px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px 20px;
+  color: rgba(255, 255, 255, 0.835);
+  
+}
+
+.navbar_button:hover {
+  /*button animation*/
+  
+  background: hsl(221, 91%, 60%);
+  transition: all 0.3s ease;
+}
+
+.navbar_links:hover {
+  color: #849eeb;
+  transition: all 0.3s ease-in-out;
+}
+
+.wave {
+    margin-right: 20px;
+    padding: 10px;
+    animation: wave 3s infinite;
+}
+
+@keyframes wave {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0) rotate(25deg); }
+    30%  { transform: scale(1.1)   translateY(-10px) rotate(40deg);}
+    50%  { transform: scale(1.1)   translateY(-30px) rotate(40deg);}
+    65%  { transform: scale(1,1) translateY(0) rotate(25deg);}
+    100% { transform: scale(1,1) translateY(0);}
+}
+
+/* hamburger menu */
+
+
+@media screen and (max-width: 960px) {
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 97%;
+  }
+
+  .navbar_menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 100;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+    background: rgb(0, 0, 0);
+  }
+
+  .navbar_menu.active {
+    background: rgb(0, 0, 0);
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 40vh;
+    width: 100vw;
+    font-size: 18px;
+  }
+
+  .navbar_logo {
+    padding-left: 25px;
+  }
+
+  .navbar_toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar_links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .navbar_button {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0;
+  }
+}
