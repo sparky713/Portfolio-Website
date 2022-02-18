@@ -9,6 +9,9 @@
   </head>
   <body>
     <section id="main">
+      <img src="/images/moon.png" id="moon">
+      <img src="/images/mountain.png" id="background">
+      
       <nav class="navbar">
         <div class="navbar_container">
           <!--LOGO-->
@@ -17,10 +20,10 @@
               ><img src="images/Logo.png" alt="Page Logo" width="35px"
             /></a>
             <div class="navbar_toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
           </div>
           <!--LOGO-->
           <ul class="navbar_menu">
@@ -45,61 +48,79 @@
           </ul>
         </div>
       </nav>
-      <br>
-    <!-- <div class="header">
+      <br />
+      <!-- <div class="header">
       <h1 class="wave">👋</h1></h1> <h1>Sally Park</h1>
     </div> -->
-    <div class="header">
-      <h1 class="wave">👋</h1>
-    </div>
-    <div class="name_container">
-    <ul class="name">
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">S</div>
-      </li>
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">A</div>
-      </li>
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">L</div>
-      </li>
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">L</div>
-      </li>
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">Y</div>
-      </li>
-    </ul>
-    <ul class="name">
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">P</div>
-      </li>
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">A</div>
-      </li>
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">R</div>
-      </li>
-      <li class="letter">
-        <input type="checkbox" />
-        <div class="letter_container">K</div>
-      </li>
-    </ul>
-  </div>
+      <div class="header">
+        <h1 class="wave">👋</h1>
+      </div>
+      <div class="name_container">
+        <ul class="name">
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">S</div>
+          </li>
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">A</div>
+          </li>
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">L</div>
+          </li>
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">L</div>
+          </li>
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">Y</div>
+          </li>
+        </ul>
+        <ul class="name">
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">P</div>
+          </li>
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">A</div>
+          </li>
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">R</div>
+          </li>
+          <li class="letter">
+            <input type="checkbox" />
+            <div class="letter_container">K</div>
+          </li>
+        </ul>
+      </div>
 
-  </section>
+      <!--Spotify API-->
+      <div class="music">
+        <figure>
+          <figcaption>I'm currently listening to...</figcaption>
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/7b9JNhUhOEVKo2L5p7u0JX?utm_source=generator"
+            width="5.22%" height="80" frameborder="0" allowfullscreen="" class="spotify"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+          </iframe>
+        </figure>
+        <div class="playlist">
+          <img class="playbutton" src="/images/Icons/play.png" alt="spotify play button"/>
+        </div>
+      </div>
+      <!--Spotify API end-->
 
+
+    </section>
     <section id="about">
       <p>ad</p>
     </section>
     <script src="app.js"></script>
+    
   </body>
 </html>
