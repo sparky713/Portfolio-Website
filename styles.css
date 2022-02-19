@@ -49,6 +49,8 @@ img#moon {
 .name_container {
   width: max-content;
 }
+
+
 .name {
   position: relative;
   display: flex;
@@ -317,15 +319,15 @@ h1 {
 
 figcaption {
   font-family: 'Poppins', sans-serif;
-  color:hsl(220, 39%, 78%)
+  color:hsl(220, 39%, 78%);
+  width: 200px;
 }
 
-.spotify {
+/* .spotify {
   opacity: 0.1;
   position: absolute;
   z-index: 50;
-  margin-left: 50px;
-}
+} */
 
 .playlist .playbutton {
   width: 15%;
@@ -336,12 +338,11 @@ figcaption {
 }
 
 
-.playlist {
-  position: absolute;
-  background: none;
-}
 .music {
   width: max-content;
+  height: max-content;
   margin-top: 150px;
+  position: absolute;
+  right: -230px;
 }
 
