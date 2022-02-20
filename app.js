@@ -14,7 +14,6 @@ window.addEventListener("scroll", function () {
 
   moon.style.left = -value * 0.5 + "px";
   moon.style.top = value * 0.8 + "px";
-//   bg.style.top = -value * 0.5 + "px";
 });
 
 $(document).ready(function() {
