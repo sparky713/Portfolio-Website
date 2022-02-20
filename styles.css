@@ -227,6 +227,7 @@ h1 {
   position: relative;
   bottom: -120px;
   /* border: 20px solid white; */
+  opacity: 0.01;
 }
 
 @keyframes wave {
@@ -391,10 +392,19 @@ figcaption {
    text-decoration: none;
  }
 
- .code {
+ #code {
    position: relative;
-   right: 5px;
-   top: 100px;
-   width: 40%;
-   margin: 2px 150px auto 80px;
+   /* right: 5px;
+   top: 100px;*/
+   width: 450px;
+   cursor: grab;
+   
+ }
+
+ #movable_code {
+   position: absolute;
+   width: max-content;
+   margin: 100px 150px auto 100px; 
+   z-index: 1000;
+   
  }
